@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fault Prediction</title>
+    </head>
+    
+    <body>
+        <form name="form", method="POST", style="text-align: center;">
+            <br>
+            CHP1Temp1 in C°: <input type="number" step="any" name="c1t1", placeholder="Enter Temperature for First Sensor in Chiller Pump 1" required/>
+            <br><br>
+            CHP1Temp2 in C°: <input type="number" step="any" name="c1t2", placeholder="Enter Temperature for Second Sensor in Chiller Pump 1" required/>
+            <br><br>
+            CHP2Temp1 in C°: <input type="number" step="any" name="c2t1", placeholder="Enter Temperature for First Sensor in Chiller Pump 2" required/>
+            <br><br>
+            CHP2Temp2 in C°: <input type="number" step="any" name="c2t2", placeholder="Enter Temperature for Second Sensor in Chiller Pump 2" required/>
+            <br><br>
+            CHP1Vib1 in mm/s: <input type="number" step="any" name="c1v1", placeholder="Enter Vibration Data for First Sensor in Chiller Pump 1" required/>
+            <br><br>
+            CHP1Vib2 in mm/s: <input type="number" step="any" name="c1v2", placeholder="Enter Vibration Data for First Sensor in Chiller Pump 1" required/>
+            <br><br>
+            CHP2Vib1 in mm/s: <input type="number" step="any" name="c2v1", placeholder="Enter Vibration Data for First Sensor in Chiller Pump 2" required/>
+            <br><br>
+            CHP2Vib2 in mm/s: <input type="number" step="any" name="c2v2", placeholder="Enter Vibration Data for First Sensor in Chiller Pump 2" required/>
+            <br><br>
+            <button value="Submit">Run</button>
+        </form>
+        <p style="text-align: center;">Previous prediction: {{ output }}</p>
+    </body>
+</html>
