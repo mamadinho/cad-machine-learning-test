@@ -8,12 +8,11 @@ import argparse
  
 parser = argparse.ArgumentParser(description="A simple app to extract text from PDF table",
                                  formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-parser.add_argument("-f", "--file_name", action="store_true", help="File name")
+parser.add_argument("filename")
 args = parser.parse_args()
 config = vars(args)
-print(config)
 
-file_name = sys.argv[1]
+file_name = config['filename']
   
 # creating a pdf file object
 pdfFileObj = open(file_name, 'rb')
